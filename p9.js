@@ -1,19 +1,19 @@
-var a, b, c;
+'use strict';
 
-// Positive result
-// 3, 4, 5 ( 9 + 16 = 25)
-// 3 + 4 + 5 = 12
-//
-//
-
-for ( var i = 1; i < 100; i += 2 ) {
-if (Math.sqrt(i) % 2) {
-
-  }
+function doShit() {
+  var a, b, c;
+  for (let i = 1; i < 1000; i++) {
+    a = i;
+    for (let j = 1; j < 1000; j++) {
+      b = j;
+      c = Math.sqrt(a*a + b*b);
+      if (c%1 === 0 && a+b+c === 1000) {
+        return a*b*c;
+      }
+    }
+  } 
 }
-
-
 
 module.exports = function(){
-
-}
+  return doShit();
+};
